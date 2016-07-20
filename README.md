@@ -12,6 +12,7 @@ tiny-spring
 1. 支持singleton类型的bean，包括初始化、属性注入、以及依赖bean注入。
 2. 可从xml中读取配置。
 3. 可以使用Aspectj的方式进行AOP编写，支持接口和类代理。
+4. 待开发:支持spring MVC框架 实现HTTP请求至Controller的分发
 
 ## 使用
 
