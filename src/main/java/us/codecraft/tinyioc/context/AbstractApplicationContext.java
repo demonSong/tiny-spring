@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * @author yihua.huang@dianping.com
  */
-public abstract class AbstractApplicationContext implements ApplicationContext {
+public abstract class AbstractApplicationContext implements WebApplicationContext {
 	protected AbstractBeanFactory beanFactory;
 
 	public AbstractApplicationContext(AbstractBeanFactory beanFactory) {
