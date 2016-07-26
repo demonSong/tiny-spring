@@ -33,7 +33,7 @@ public class AutowireCapableBeanFactory extends AbstractBeanFactory {
 				declaredMethod.setAccessible(true);
 
 				declaredMethod.invoke(bean, value);
-			} catch (NoSuchMethodException e) {
+			} catch (NoSuchMethodException e) {//没有set方法时,直接field注入
 				Field declaredField = bean.getClass().getDeclaredField(propertyValue.getName());
 				declaredField.setAccessible(true);
 				declaredField.set(bean, value);
